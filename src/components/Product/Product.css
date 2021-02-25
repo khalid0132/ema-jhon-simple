@@ -1,0 +1,6 @@
+.product-style{
+    display: flex;
+}
+.product-photo, .product-history{
+    padding: 10px;
+}

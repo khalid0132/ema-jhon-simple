@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../../fakeData";
 import fakeData from "../../fakeData";
+import Product from "../Product/Product";
 import "./Shop.css";
 const Shop = () => {
   // console.log(fakeData);
@@ -12,12 +13,10 @@ const Shop = () => {
       {/* <h1>Shopping here</h1>
       <h3> Number of Products:{products.length}</h3> */}
       <div className="product-container">
-        <ul>
+ 
           {/* {products.map(pd => <img src= {pd.img}></img>)} */}
-          {products.map((pd) => (
-            <li>{pd.name} </li>
-          ))}
-        </ul>
+          {products.map((pd) => (<Product product = {pd}> </Product>))}
+    
       </div>
       <div className="cart-container">
         <h1>This is cart</h1>
