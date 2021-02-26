@@ -8,7 +8,7 @@ const Header = () => {
       <img src={logo} alt="" />
       <nav>
         <a href="/Shop">Shop</a>
-        <a href="/Order Review">Order Review</a>
+        <a href="/OrderReview">Order Review</a>
         <a href="/Manage">Manage Inventory</a>
       </nav>
       <div className = "search-input">
