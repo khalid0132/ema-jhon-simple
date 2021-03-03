@@ -8,8 +8,8 @@ const Header = () => {
       <img src={logo} alt="" />
       <nav>
         <a href="/Shop">Shop</a>
-        <a href="/OrderReview">Order Review</a>
-        <a href="/Manage">Manage Inventory</a>
+        <a href="/Review">Order Review</a>
+        <a href="/Inventory">Manage Inventory</a>
       </nav>
       <div className = "search-input">
           <span><input placeholder= "type here to search" type="text"/ ></span>
