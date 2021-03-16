@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
 import "./Header.css";
 const Header = () => {
@@ -7,9 +8,9 @@ const Header = () => {
       {/* <h1>I am header</h1> */}
       <img src={logo} alt="" />
       <nav>
-        <a href="/Shop">Shop</a>
-        <a href="/Review">Order Review</a>
-        <a href="/Inventory">Manage Inventory</a>
+        <Link to="/Shop">Shop</Link>
+        <Link to="/Review">Order Review</Link>
+        <Link to="/Inventory">Manage Inventory</Link>
       </nav>
       <div className = "search-input">
           <span><input placeholder= "type here to search" type="text"/ ></span>

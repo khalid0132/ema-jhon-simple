@@ -12,7 +12,7 @@ const Review = () => {
     const history = useHistory();
 
     const handleProceedCheckOut = () =>{
-        history.push('/login');
+        history.push('/shipment');
     }
 
     const removeProduct = (productKey) =>{
