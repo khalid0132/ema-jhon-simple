@@ -26,12 +26,17 @@ const Cart = (props) => {
   const tax = (total / 10).toFixed(2);
 
   const grandTotal = (total + shipping + Number(tax)).toFixed(2);
+
+  const formatNumber = num => {
+    const precision = num.toFixed(2);
+    return Number(precision);
+  }
   return (
     <div>
       <h2>Order Summery</h2>
       <p>Items ordered: {cart.length}</p>
       <p>
-        <small>Product Price: {total}</small>
+        <small>Product Price: {formatNumber(total)}</small>
       </p>
       <p><small>Shipping: {shipping}</small></p>
       <p><small>Tax: {tax}</small></p>

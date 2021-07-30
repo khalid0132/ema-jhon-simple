@@ -52,8 +52,13 @@ const Shop = () => {
     <div className="twin-container">
       {/* <h1>Shopping here</h1>
       <h3> Number of Products:{products.length}</h3> */}
+     
       <div className="product-container">
- 
+
+      {/* Material UI spinner added bellow: <CircularProgress /> */}
+      {
+        products.length === 0 && <p>LOADING...</p>
+      }
           {/* {products.map(pd => <img src= {pd.img}></img>)} */}
           {products.map((pd) => (<Product 
                                     showAddToCart = {true}
